@@ -1,0 +1,18 @@
+
+Middleware
+    - Build-in are methods that are packaged as part of express
+        - server.use(express.json())
+    - Custom is middleware that we write
+        - (req, res) function
+    - Third-party is installed with Yarn/NPM to add functionality to our application
+        - 
+
+Postman
+    - Headers
+        - X-Powered-By
+            - Not good to show what you're using. Could lead to attack vector - Dig up server and find weaknesses that they can exploit
+                - Third party middleware to make your application more secure: yarn add helmet
+                - Import it const helmet = require('helmet')
+                - server.use(helmet())
+        - ETag
+            - Shows you the version of the response that you got and allows you to take advantage of caching if you want to
