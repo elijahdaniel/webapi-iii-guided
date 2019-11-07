@@ -14,5 +14,3 @@ Postman
                 - Third party middleware to make your application more secure: yarn add helmet
                 - Import it const helmet = require('helmet')
                 - server.use(helmet())
-        - ETag
-            - Shows you the version of the response that you got and allows you to take advantage of caching if you want to
